@@ -1,0 +1,29 @@
+.header 
+    // background-color: $color--bg;
+    // padding: 30px 0
+    // @include flx-align-items-cen
+    .container, nav
+        @include flex-space-between-align-cen 
+    .logo
+        // max-width: 14em
+        width: calc(180px + 3vmin)
+    &__list, nav
+        column-gap: 20px
+        @include flx-align-items-cen
+    &__item 
+        a
+            font-weight: 700
+            font-size: calc(3px + 2vmin)
+            transition: $transition--main
+            padding-bottom: 5px
+            border-bottom: 2px solid transparent
+            column-gap: 20px
+            @include flex-space-between-align-cen
+            
+            &:hover
+                color: $color--primary
+             
+    .active 
+        color: $color--primary
+        border-color: $color--primary
+
